@@ -7,9 +7,12 @@ test = 1
 
 
 def fac(n):
-  if n==0:
-    return 1
-  else:
-    return n*fac(n-1)
+  p = 1
+
+
+  while n>0:
+   p*= n
+   n = n -1
+  return p
   
 print fac(4)
